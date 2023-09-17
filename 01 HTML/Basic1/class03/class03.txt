@@ -1,0 +1,52 @@
+Table :
+Span is use to spread col or row over multiple rows or cols
+rowSpan
+columnSpan
+colGroup , to style a col
+
+
+table {
+    table
+    tr
+    td
+    th
+    tHead
+    tBody
+    tFoot
+
+
+    rowSpan
+    columnSpan
+    colGroup {
+        to style columns 
+        {
+            col
+            span
+            style{
+                bg-color
+                visibility
+            }
+        }
+    }
+    rowGroup{
+        does it exist if not alternative ?
+        H/W 
+    }
+
+    h1, p, figurE{
+        img
+        figcaption}
+        h2 , p
+        <h2> , <ul> , <li> <strong>
+        <blockQuote> , <p> , <cite> , <a>
+         <h2> ,<p> , <ul> , <li> ,<a>
+
+
+
+
+
+    <BlockQuote <cite>
+    for short quotation inline quotes <q> 
+    <cite> to cite the author of  a quotes
+
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+
+}
+#wrapper{
+    height: 50vh;
+    /* display: flex; */
+    /* width: 100%; */
+}
+.card {
+    /* background-color: azure; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4px);
+    justify-content: center;
+    justify-content: center;    
+    border-radius: 150px;
+}
+.text{
+    margin-top: 100px;
+    margin-left: 50px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+
+}
+#addcart{
+    background-color: rgb(42, 109, 42);
+    border-radius: 15px;
+
+}

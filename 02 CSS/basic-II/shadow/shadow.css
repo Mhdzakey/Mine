@@ -1,0 +1,20 @@
+h1{
+    text-shadow: 2px 2px 5px red  ;
+    text-shadow: 2px 2px 5px red, 4px 4px 4px green  ;
+}
+.box{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    box-shadow: -3px -4px 10px red, 4px 4px 4px yellow;
+    color: blueviolet;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    text-shadow: 1px 1px 3px black ;
+}
+#para{
+    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px  black;
+}

@@ -1,0 +1,42 @@
+HTML = Hyper text markUp Language
+language = set of rules 
+Markup = annotation or tags to show markup content 
+HyperText = text used to link multiple pages or one single page linked to another page
+
+uses:
+Html =(Description of web pages) Basic building block(skeleton of web) , basically for content creation
+CSS = For formatting or appearance 
+Javascript = Functionality 
+
+Tags = Keyword to tell browser how to render different elements
+
+Text element , 100 + html Tags available 
+Block Element                  and                   Inline element, uses to differentiate specific part of text
+Paragraph <p></p>                                       Emphasis <em></em>
+heading <h1></h1>                                        Strong Emphasis<strong></strong>
+list <ul></ul>                                           Anchor for link  <a></a>
+      <article></article>
+      <section></section>
+
+
+Empty tag = self closing tag i.e <br/> , <img/> , <input/>
+
+Lists :- Ordered , Unordered and description Lists.
+
+Attributes = property
+ put always in start of a tag
+ All elements have Attributes
+ uses, provide additional info about elements
+
+ <!DOCTYPE html> tell browser it is htm version5 Document
+  lang = "en" tell content of web page in english.
+ In head tag we have metadata,  data about data title, characterSet, viewPort(screen of device), style, script, other metadata
+    meta tag store info about web page 
+ In body tag Actual Content 
+
+<hr> "hr " tag to create line horizontal
+<Table>create table <tr>to create row</tr>, <td>tsble colum</td></Table>
+first row is thead
+above last row for tbody
+last row is tfooter/summary
+<form>radio , checkbox, description</form>

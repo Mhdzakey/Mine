@@ -1,0 +1,165 @@
+HTML Finish
+
+Links {
+    bookmark
+    phone
+    mail
+}
+
+
+
+
+
+
+Semantic
+
+HyperLinks <a> tag from text to {Links , call , mail}
+
+
+bookmark need id
+Div is generic container.
+div tag , {division tags} generic tags , uses for everything
+put lots of tag in div tags
+it is a {Block Element}, in css style its design will set on block.
+
+Div vs Span
+Span tag same as div but span is an {inline element} {css property will be setup tp display: inline}  
+div can use in multiple single line
+span is for single line
+div tag -> display:inline = span tag.
+span tag -> display:block = div tags.
+if span tag in style block display is it become div.
+
+
+Semantic tags,  provide complete description or meaningful about a tags.
+div, span is not semantic tags  
+Table , form and section are semantic tags.
+
+article
+aside
+figure
+figCaption
+header
+footer
+main
+nav
+
+Why we use different tags because everything has a meaning like <p> , <article> .
+It is a good practice to achieve search optimization
+
+
+Section tag , define sections or chapters in html documents.
+
+
+Article , independent text 
+<article>
+    <h2> ------- <h2>  
+    <p>  ------- <p>
+    <p>  ------- <p>
+    <p>  ------- <p>
+    <p>  ------- <p>
+    <p>  ------- <p>
+<article>
+
+interview Question
+1.Can we use section tag in an article?
+Yes if we have multiple parts or sections.
+2.Difference between <header> and <h1> 
+Read article on Stack overflow
+3.Can we use header in a footer tag?
+4. Can we use multiple header tags?
+5. Difference between Body and main tags
+body {actual content {header and footer}} and in main {we do not have ]]] header footer }
+
+
+<header>
+use in web Doc introductory parts like
+brand name
+logo
+heading
+
+<Footer>
+mainly use for About Section of
+Author
+copyright
+term of use
+privacy policy
+refund policy
+
+<Nav>
+
+Use for navigational Links
+It consists of Links mainly
+<a> --------------- <a>
+<a> --------------- <a>
+<a> --------------- <a>
+<a> --------------- <a>
+<a> --------------- <a>
+
+<aside>
+ use for indirectly surrounding content
+{
+content
+ --------------------
+ --------------------
+ ----------- <aside>
+ ----------- <aside>
+ ----------- <aside>
+ --------------------
+}
+
+
+
+DOM , Document Object Model
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
