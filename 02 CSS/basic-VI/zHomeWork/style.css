@@ -1,0 +1,40 @@
+*{
+    margin: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+     display: grid;
+     grid-gap: 15px;
+    /*
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    background-color: rgb(28, 172, 216);
+
+}
+.header{
+    border: 1px solid rgb(213, 205, 205);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3cc75e;
+    
+   
+}
+.body{
+    padding: 20px;
+    border: 1px solid rgb(255, 251, 251);
+    padding: 10px;
+    margin: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:#980707;
+}
+.card{
+    padding: 10px;
+    background-color: #fff;
+}
+p{
+    color: #136ba2;
+}
