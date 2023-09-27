@@ -1,0 +1,1 @@
+Tailwind is CSS framework to make developer life easy.
