@@ -1,0 +1,156 @@
+HTML = Skeleton of Web = what
+CSS  = Apperance       = Style
+Javascript = Process or Functionality or behaviour of web html tag = Logic
+
+What is Javascript?
+    To implement behavoir or functionality of web.
+    Client Side language or scripting(To do what and how) language
+    Developed by    
+                Netscape in 1995 in 10 days.
+Tips:-          StartUp is good for fresher.
+
+What can we do with js?
+    Everyting nearly.
+
+How to Run JS?
+    Using JS Engine.   
+
+FirFox Engine is SpiderMonkey.
+Chrome Engine is V8.
+
+Adding C++ program with js by using Node(Can be execute outside the brower).
+
+Best Position to add JS Script at the end of html to improve UX.    
+
+// Comment 
+
+Separation of Concern Principle 
+
+Variables
+    let
+
+
+Scope 
+    let is nearst Block Scope {}, rediclation is possible of variable
+    var is global scope
+    In JavaScript, var variables can be re-declared within the same 
+    scope without causing an error. This behavior is known as "variable hoisting." When you re-declare a variable using var, it essentially updates the existing variable rather than creating a new one.
+    However, this behavior can lead to unexpected results and is generally considered a bad practice. It can cause confusion and make code harder to maintain.
+    This is one of the reasons why let and const were introduced in ECMAScript 6 (ES6).
+    Unlike var, variables declared with let and const cannot be re-declared within the same scope. If you try to re-declare a variable using let, it will result in a syntax error.
+
+Constants
+    Value of variable can not be change
+
+Variable Naming
+    Rules
+        cannot be a reserved keyword {let, if, var etc}
+        meaningful
+        cannot start with a number
+        cannot contain space or -
+        CamelCase first letter will small second word first charcter will be Capital i.e muhammadZakey
+
+Primitve DataTypes
+    String. sequence of characters
+    Number. int and float
+    Boolean. two values
+    Undefined. by default undeclarad var value is undefined.
+    Null. Empty or Clear a variable value.
+
+Dynamic Typing
+    
+
+Reference Types
+    Objects:   Multiple variables linked or key values pair
+    Arrays:    DataStructure used to conatin a list of items 
+    Functions: 
+
+
+Operator:
+    arithmetic - + * / % **
+    assignment  
+        Pre = Firstly increment the value Secondly use the value 
+        post = Firstly use the value secondly increment the value
+        pre-increment     pre-decement
+        post-increment    post-decement
+
+    comparison > < >= <= ==={Strict Equality} !== Not Equal.
+        
+        Loose Equality    ==     value just same i will work     
+        
+        Strict Equality   ===    value and data must be same
+
+        Ternary Operator       Condition ? true : false
+
+    bitwise
+        Bitwise AND &
+        Bitwise OR |
+
+    logical       
+        AND.
+        OR.  Short Circuting 
+        NOT. 
+
+        With Non Boolean
+            concept of  FAlse and Truth
+            Falsey             vs        Truthy     
+                Undefined                   Anything that is not Falsey
+                Null
+                0
+                false
+                ' '
+                NaN
+
+Operator Precedence
+    
+
+Control Satements
+
+if-else
+if-elseif-else
+Switch case
+
+
+Loops: Repetition of tasks
+    For Loop :       for(initialzation; condition; Updation){}
+    While Loop :        
+                        initialzation
+                        while(condition)
+                        {
+                            Updation
+                        }
+
+    Do-while Loop :     
+                    do
+                    {
+                    Updation
+                    }
+                    while(condition)
+                    
+                    Atleast one time execute due to do.
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

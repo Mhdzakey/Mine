@@ -1,0 +1,85 @@
+Object:  
+    Key value pair 
+    or 
+    Multiple linked variables in a single variable 
+    {} = object literal
+    {properties of objects }
+    function in object is called method
+
+best practice of Creating Object:
+    
+    1: Factory function : Came case Notation
+    
+             function creates objects then return it.
+    
+    2: Constructor function: Pascal Notation i.e NumberOFStudents
+
+            It initialize/define properties/method of anobject.
+
+            this = Reference of the current object
+            new  = create empty object
+
+
+Dynamic Nature of Objects:
+    ...
+    Function is also objects in JS
+
+
+Funciton are Objects in JS.
+
+
+
+
+Types in JS are two Types 
+                        1:Primitve   ->  Number,String,Boolean,Undefined,Null
+                        2:Reference  -> Functions, objects, arrays -> all are objects
+
+Difference between primitve vs Reference
+        primitve:
+        // primitve are copied by their value.
+            function call hotay waqat copy creat hote hay 
+        Objects or Reference:
+        // reference are copied by their address or refernce.
+            function call hotay waqat same address ko difference/same name point lar rahy hotay hay
+
+
+iterating through Objects
+    
+    For-in 
+    For-of  
+        using object.Keys(objectName)
+        using object.enteries(objectName)
+
+
+Object Cloning:
+ 
+ iteration
+ Assign
+ Spread
+
+
+Garbage Collection:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
