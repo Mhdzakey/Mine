@@ -40,7 +40,7 @@ Difference between primitve vs Reference
             function call hotay waqat copy creat hote hay 
         Objects or Reference:
         // reference are copied by their address or refernce.
-            function call hotay waqat same address ko difference/same name point lar rahy hotay hay
+            function call hotay waqat same address ko difference/same name point kar rahy hotay hay
 
 
 iterating through Objects

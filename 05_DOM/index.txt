@@ -1,0 +1,102 @@
+Window
+    is global object
+    created by browser
+    represent by browser window
+
+    in Window object    
+        Dom , Bom , JS Core
+    
+
+Dom 
+    Document Object Model(Tree Data Structure)
+    Html code convert into JS Object
+ 
+  <html>
+    <head> --------</head>
+    <body> --------</body>
+  <html>
+
+    Works
+       Under the hooks
+         charcters -> tags -> token(tokanizer) -> nodes -> DOM
+    
+Manipulation
+    Access Element.
+        getElementById
+        getElementByClassName
+        getElementByTagName
+
+    1:- Document.getElementById()
+        it is called on document object
+        it return a single object 
+    2:- Document.getElementByClassName()
+        it is called on document object
+        the list return is not an array
+    3:- Document.getElementByTagName
+        it is called on document object
+        it return arraylike objects return multiple object with exact TagName.
+
+trick -> $0
+    CSS 
+        # for id.
+        . for class.
+        TagName for tag.
+querySelector
+    it return single Element
+    it also return first element of multiple tag
+    
+    need single element    
+        querySelector('#id')
+        querySelector('.className')
+        querySelector('tagName')
+
+    need multiple element    
+        querySelectorAll()
+
+#:- WebPage Update  Existing Content
+    innerHtml   
+            get/set html Content 
+                . get an element, all of its descendent
+                . set an element, all of its descendent
+    outerHtml
+    textContent
+    innerText  
+
+    Using js adding new element/Content
+        CreateElement()
+        appendChild() 
+    
+    insertAdjacentHTML()
+        need two argument
+        location/position
+                beforebegin
+                afterbegin
+                beforeend
+                afterend
+        html text/content
+
+    using js  manipulating  css proprties     
+        style 
+        cssText
+        setAttributes
+        .className
+        .classList
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

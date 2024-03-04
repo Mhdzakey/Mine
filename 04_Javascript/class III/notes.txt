@@ -41,4 +41,4 @@ In-Built Objects && Array:              MMMMMMMDDDDNNNNN -> mdn
 9:- Arrow function
         () => {}
 
-10:- Spred Operator
+10:- Spread Operator

@@ -1,0 +1,84 @@
+
+------------------------------------Class IV:-------------------------------------------------------
+
+1:- 
+    Function : 
+                A block of code that fulfil a specific task
+    Function FunctionName{}
+    y?   
+        Bulky code
+        better Readibilty   
+        to reUse code
+
+    Function Declaration
+        Function FunctionName()
+        {
+
+        }
+
+
+2:-     Hoisting:
+        The process of moving function declaration to the top of file
+        automatically by the JS Engine
+    {
+        
+    }
+
+3:-     Special objects -> Arguments
+
+        using arugements we can process all the Arguments
+        into a dynmaic function.
+
+
+        Spread ...    
+4:-     Rest Operator 
+
+
+5:- Getter/Setter
+    Getter = access prop
+    Setter = change prop
+
+
+6:- Error Handling 
+    try {
+    
+    } catch (error) {
+    
+    }
+
+
+Scope of Variable
+    let scope in nearest block {}
+    var global in the entire file or function 
+
+
+
+7:- Reducing aan array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
