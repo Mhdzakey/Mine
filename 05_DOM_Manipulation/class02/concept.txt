@@ -1,0 +1,134 @@
+Discussed below
+events
+respond to events
+data stored in events
+stop an events
+lifecycle of events
+
+Event:  
+    Announcement of brower
+    by defacult Event is invisible
+
+monitorEvent(): to monitor triggered Event
+unmonitorEvent(): to stop event.
+
+EventTarget:-
+    it is an interface(blueprint) 
+    top level
+
+            :------------>.   .--------.>
+        EventTarget <--- Node <--- Element
+        addEventListerner()
+        removeEventListerner()
+        dispachtEvent()
+
+        pseudoCode
+
+                <event.Target>.addEventListerner(<event-to-lisen-for>, <function to run when event happened>)
+
+                    1: EventTarget -> Components[doc,p,div,article,vide0listener]
+                    2: Event type  -> [click, scrool]
+                    3: function    -> define what to do when an event happened.
+
+    == [loose equality]  ==> same value , it allow type coersion.
+    === [strict equality] ==> same value and same type , it prevent type coersion.
+
+    removeEventListerner
+
+                pseudoCode
+
+                <event.Target>.removeEventListerner(<event-to-lisen-for>, <function to run when event happened>)
+
+                function of both add and remove must be same,
+                but functions are object in JS so to implement 
+                functionlaity function must be same to refere to same
+                address in memory 
+
+                removeEventListerner    same type
+                                        same type
+                                        same function
+Phases of Event
+        . Capturing a Phase
+        . At target Phase
+        . bubbling Phase 
+Use Capture: to capture an event in a specific phase    
+
+by default addEventListerner is execute in bubbling phase 
+
+let change default behavour then we have to use thired parameter 
+addEventListerner('click', function, ture) true value on capturing phase
+
+
+<event.target>.addEventListerner(type,listener, by default bbubble phase (true on capture phase))
+
+type = click, scroll, doubleclick
+listener = function to execute functionality after event triggered
+true = caputring phase
+
+
+
+. The Event Object:
+    when an event occure, addEventListerner function receive an event object
+    provide all information about the event
+
+. The Default Action: preventDefault
+
+
+Avoid Too Many Events 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+
+
