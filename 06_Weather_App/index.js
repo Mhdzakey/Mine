@@ -8,7 +8,7 @@ const unserInfoContainer = document.querySelector(".user-info-container")
 
 
 let oldTab = userTab;
-// const API_KEY = 'https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=London&aqi=no';
+// const API_KEY = 'https://api.weatherapi.com/v1/current.json?key=dapi_key&q=London&aqi=no';
 oldTab.classList.add("current-tab");
 getfromSessionStorage();
 function switchTab(newTab){
@@ -65,7 +65,7 @@ searchTab.addEventListener('click', ()=>{
 
     //API CALL
     try{
-        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=`${city}`&aqi=no')
+        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=dapi_key&q=`${city}`&aqi=no')
         const data = await response.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
@@ -148,7 +148,7 @@ async function fetchUserWeatherInfor(city){
     grantAccessContainer.classList.remove("active");
 
     try {
-        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=`${city}`&aqi=no');
+        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=dAPI_KEY&q=`${city}`&aqi=no');
         const data = await response.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
