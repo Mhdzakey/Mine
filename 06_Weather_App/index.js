@@ -65,7 +65,7 @@ searchTab.addEventListener('click', ()=>{
 
     //API CALL
     try{
-        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=${city}&aqi=no')
+        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=`${city}`&aqi=no')
         const data = await response.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
@@ -82,17 +82,17 @@ searchTab.addEventListener('click', ()=>{
  function renderWeatherInfo(weatherInfo){
     //fetch the elements
     const cityName = document.querySelector("[data-cityName]");
-    const countryIcon = document.querySelector("[data-countryIcon]");
-    const desc = document.querySelector("[data-weatherDesc]");
-    const weatherIcon = document.querySelector("[data-weatherIcon]");
-    const temp = document.querySelector("[data-temp]");
-    const windspeed = document.querySelector("[data-windspeed]");
-    const humidity = document.querySelector("[data-humidity]");
-    const cloudiness = document.querySelector("[data-cloudiness]");
+    // const countryIcon = document.querySelector("[data-countryIcon]");
+    // const desc = document.querySelector("[data-weatherDesc]");
+    // const weatherIcon = document.querySelector("[data-weatherIcon]");
+    // const temp = document.querySelector("[data-temp]");
+    // const windspeed = document.querySelector("[data-windspeed]");
+    // const humidity = document.querySelector("[data-humidity]");
+    // const cloudiness = document.querySelector("[data-cloudiness]");
 
     cityName.innerText = weatherInfo?.location.name;
     countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.location?.country.toLowerCase()}.png`;
-    desc.innerText = weatherInfo?.weather?.[2]?.description;
+    // desc.innerText = weatherInfo?.weather?.[2]?.description;
     // weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
     // temp.innerText = `${weatherInfo?.main?.temp} °C`;
     // windspeed.innerText = `${weatherInfo?.wind?.speed} m/s`;
@@ -102,11 +102,12 @@ searchTab.addEventListener('click', ()=>{
 
  }
 function getlocation(){
-    if(!navigator.geolocation){
+    if(navigator.geolocation){
          navigator.geolocation.getCurrentPosition(showPosition);
     }
     else{
         //HM show an alert for no geolocation support available
+        alert("No support")
     }
 }
 function showPosition(position){
@@ -117,20 +118,28 @@ function showPosition(position){
     }
 
     sessionStorage.getItem("user-cordinates", JSON.stringify(userCoordinates));
-    fetchUserWeatherInfor(userCoordinates)
+    fetchUserWeatherInfor(userCoordinates);
 }
+// function x(){
+//     if (navigator.geolocation) {
+//         // Geolocation is supported, proceed with obtaining the user's position
+//     console.log("s");
+//     } else {
+//         console.log("Geolocation is not supported by this browser.");
+//     }
+// }
 const grantAccessButton = document.querySelector("[data-grantAccess]");
 grantAccessButton.addEventListener('click', getlocation);
 
 const searchInput = document.querySelector("[data-searchInput") 
-searchForm.addEventListener("sumbit",(e)=>{
+searchForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     let cityName = searchInput.value;
     
     if(cityName === "") 
         return;
     else
-        fetchUserWeatherInfor(searchInput.value);
+        fetchUserWeatherInfor(cityName);
 });
 
 async function fetchUserWeatherInfor(city){
@@ -139,8 +148,8 @@ async function fetchUserWeatherInfor(city){
     grantAccessContainer.classList.remove("active");
 
     try {
-        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=${city}&aqi=no');
-        const data = response.json();
+        const response = await fetch('https://api.weatherapi.com/v1/current.json?key=d282f40f914f41fea91215520240603&q=`${city}`&aqi=no');
+        const data = await response.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
         renderWeatherInfo(data)
