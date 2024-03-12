@@ -1,0 +1,30 @@
+React:
+    JS Library
+    Just like C++ STL Library for C++.
+
+    Magical Line:
+        React is all about component
+                                    A resuable piece of code.
+                                    A Custom HTML element
+Why React:
+         Just JS is just imperative(what and how) approach
+         React is declarative(what)
+         easily UI creation
+         Reusibilty
+         Don't Repeat Yourself
+         Readibilty
+         Separation of concern
+         increses MAintability
+
+
+         SPA(Sngle Page Approach)
+
+Alternative To React
+        Angular
+        Vue
+
+Components:
+
+Document => reactjs.org
+
+
