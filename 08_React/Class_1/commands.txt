@@ -1,1 +1,6 @@
 1:- npx create-react-app 
+
+
+for fast downloading
+
+npm create vite@latest
