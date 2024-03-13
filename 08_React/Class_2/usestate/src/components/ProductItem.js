@@ -1,17 +1,15 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Cards from './Cards'
 import './ProductItem.css'
 import ProductDate from './ProductDate'
 
 const ProductItem = (props) => {
-  let title = props.title;
+  const [title, setTitle] = useState(props.title);
+  function clickHandler(){
+    setTitle("Popcorn")
+  }
 
-function clickHandler(){
-  title = "Popcorn";
-  console.log("Clicked Button");
-}
-
-  return (
+  return ( 
     <Cards className= "product-item">
       <ProductDate date={props.date}/>
          <div className='product-item_description'>

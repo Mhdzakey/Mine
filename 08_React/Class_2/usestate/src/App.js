@@ -2,6 +2,7 @@
 import React from 'react';
 import Products from './components/Products'
 import './App.css';
+import NewProducts from './components/NewProducts';
 
 
 
@@ -36,8 +37,13 @@ const App = () => {
 
     },
   ];
+  function parentHandler(d){
+    console.log("Parent Handler");
+    console.log(d);
+  }
   return(
     <div className='app'>
+      <NewProducts onParent={parentHandler}/>
       <Products item = {products}/>
     </div>
   );
