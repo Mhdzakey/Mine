@@ -1,0 +1,79 @@
+UseEffect:  
+            Manage Side Effect(is  a change that effect something  outside the  component being rendered).
+            If you want to finish some task(side effect) after a component rendered, then we defined that task in UseEffect() hook.
+Side Effect:
+             React Dom Manipulation
+             Making Async API Calls
+             Writing to Storage
+             IO Operation
+             Subscription
+
+Syntax:
+        UseEffect( ()=>{
+            //Side-Effect
+        });
+
+UseEffect
+    Variations:
+
+    1: 
+        // Run After Every Render
+        UseEffect( ()=>{
+        // Side-Effect
+        });
+    2:
+        // Run Once After
+        // Mounting(inital State) 
+        UseEffect( ()=>{
+        // Side-Effect
+        }, []); []-> Dependencies
+    3:
+        // Run Only After
+        // State Change 
+        UseEffect( ()=>{
+        // Side-Effect
+        }, [State]);
+    4:
+        // Run Once After
+        // Props Change 
+        UseEffect( ()=>{
+        // Side-Effect
+        }, [Props]);
+    5:
+        // Run Only After
+        // Props and/or State Change 
+        UseEffect( ()=>{
+        // Side-Effect
+        }, [Props, State]);
+    6:  
+        // Cleaning Up
+        UseEffect( ()=>{
+        return function CleanUp(){
+        // Side-Effect
+        }
+        }, [Props,State]);
+
+
+Difference b/w 
+    UseState; Handle State, and State denoated a particular value of var 
+     and 
+    UseEffect;Handle Side Effect,  Side Effect shows a function particular flow 
+
+UseEffect( ()=> Callback Function, []=> Array of Dependencies );
+
+
+
+Mount : Rendered on DOM.
+
+
+UnMount : Unrendered from DOM.
+
+
+Component Life Cycle
+
+
+                1: Component DiD Mount.
+Class-Based:    2: Component DID Update.
+                3: Component Will UnMount.
+
+        Class-Based is out dated now.

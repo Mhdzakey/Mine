@@ -1,13 +1,17 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+/* 
 
-/* #region */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/*
 
 body{
     min-height: 100vh;
@@ -117,4 +121,4 @@ body{
 
 
 
-
+ */
