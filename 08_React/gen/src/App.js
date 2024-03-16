@@ -1,43 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from "react";
 import './App.css'
-import './tailwind.css'; // Import Tailwind CSS
-function App(){
-  const [text, setText] = useState('');
-  // const [name, setName] = useState("Zakey");
-  
-  // //Varaition 1 -> Every Render  , Rendered Everytime after change in UI
-  // useEffect(() =>{
-  //   console.log("UI Rerendered Done");
-  // });
-
-  //Varaition 2 -> First Render, onetime after change in UI
-  // useEffect(() => {
-  //   console.log("UI Rerendered Done");
-  // }, []);
-  //Varaition 3 -> First Render + whenever dependecy change
-  // useEffect(() => {
-  //   console.log("UI Rerendered Done");
-  // }, [name]);
-
-  //variation 4 -> Use as a cleaning up;
-  // useEffect(()=>{
-  //   console.log("listener Added");
-
-  //   return ()=>{
-  //     console.log("Listener Removed");
-  //   }
-
-  // });
-
-  function changeHandler(event) {
-    setText(event.target.value);
-    console.log(text);
-  }
+import Testimonials from "./components/Testimonials";
+import reviews from "./data";
+const App = () => {
   return (
-    <div className="bg-slate-500   flex justify-center align-center border-collapse p-6">
-      <input onClick={changeHandler} name="x"></input>
+    <div className="flex flex-col w-[100vw] h-[100vh] justify-center items-center bg-gray-200 ">
+      <div className="text-center ">
+        <h1 className="text-4xl font-bold">Our Testiomials</h1>
+        <div className="bg-violet-400 h-[4px] w-1/5 hover:bg-violet-700 duration-200 mt-1 mx-auto"></div>
+        <Testimonials reviews={reviews}></Testimonials>
+      </div>
     </div>
   );
-}
+};
 
-export default App
+export default App;
