@@ -1,0 +1,29 @@
+# npm init or npm init -y
+# npm i express
+MongoDB:
+    No-SQL DB.
+    To Store Data in the form of    
+                                Documents
+                                Key-value pair
+                                Graph
+                                etc
+    Generally known for 
+                        Scalibility.
+                        Performance.
+
+    Node.js store data in Object form
+    MongoDB store data in document form
+
+    So Mongoose is Object Document Modeling (ORM) use to connect node with mongoDb.
+
+SCHEMA: 
+    Structure or description of the Data.
+
+Structure Folders
+    --- Routes
+    --- Controller (Business Logic)
+    --- Models (Schema)
+    --- Config (sync with DataBase)
+    --- .env (Ports, Base URL etc)
+
+
