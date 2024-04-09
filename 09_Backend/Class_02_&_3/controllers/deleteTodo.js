@@ -1,25 +1,27 @@
-//import model 
-const Todo = require("../models/todo");
+//import th model
+const Todo = require("../models/Todo");
 
+//define route handler
 
-exports.deleteTodo = async (req,res) =>{
+exports.deleteTodo = async(req,res) => {
     try {
-
         const {id} = req.params;
+
         await Todo.findByIdAndDelete(id);
-        res.status(200).json({
+
+        res.json({
             success:true,
-         
-            message:"Entry deleted Successfully"
-        });
-    } catch (error) {
-        console.error(error);
-        console.log(error);
+            message:"Todo DELETED",
+        })
+       
+    }
+    catch(err) {
+        console.error(err);
         res.status(500)
         .json({
             success:false,
-            data:"Internal server error",
-            message:error.message,
-        })
+            error:err.message,
+            message:'Server Error',
+        });
     }
-} 
+}
